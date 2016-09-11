@@ -17,14 +17,14 @@ var wall_e = new Robot("Wall-E");
 
 
 // #1
-console.log(  );
+console.log('invoke add(0,1) returns: ', add(0,1));
 
-// #2  
-console.log(  );
+// #2
+console.log('invoke add() using call () returns: ', add.call(voltron,2,3));
 
 // #3
-console.log(  );
+console.log('invoke add() using apply () returns: ', add.apply(optimus,[20,30]));
 
 // #4
-
-console.log(  );
+var calculate = add.bind(bender);
+console.log('invoke calculat using bind ', calculate('drinking','beer'));
